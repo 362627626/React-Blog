@@ -2,6 +2,7 @@
   "name": "react-task-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://362627626.github.io/React-Blog",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -16,7 +17,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/helper-compilation-targets": "^7.16.3"
+    "@babel/helper-compilation-targets": "^7.16.3",
+    "gh-pages": "^3.2.3"
   }
 }
